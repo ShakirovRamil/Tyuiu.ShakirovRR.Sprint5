@@ -4,22 +4,24 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-using Tyuiu.ShakirovRR.Sprint5.Task0.V13.Lib;
+using System.IO;
+using Tyuiu.ShakirovRR.Sprint5.Task7.V18.Lib;
 
-namespace Tyuiu.ShakirovRR.Sprint5.Task0.V13
+namespace Tyuiu.ShakirovRR.Sprint5.Task7.V18
 {
     class Program
     {
         static void Main(string[] args)
         {
             DataService ds = new DataService();
+            string path = @"C:\Users\Рамиль\source\repos\Tyuiu.ShakirovRR.Sprint5\Tyuiu.ShakirovRR.Sprint5.Task6.V5\bin\Debug\InPutDataFileTask6V5.txt";
 
             Console.Title = "Спринт #5 | Выполнил: Шакиров Р. Р. | ИСТНБ-23-1";
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт #5                                                               *");
             Console.WriteLine("* Тема: Обработка файлов                                                  *");
-            Console.WriteLine("* Задание #0                                                              *");
-            Console.WriteLine("* Вариант #13                                                             *");
+            Console.WriteLine("* Задание #7                                                              *");
+            Console.WriteLine("* Вариант #18                                                             *");
             Console.WriteLine("* Выполнил: Шакиров Рамиль Русланович | ИСТНБ-23-1                        *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* УСЛОВИЕ:                                                                *");
@@ -31,17 +33,15 @@ namespace Tyuiu.ShakirovRR.Sprint5.Task0.V13
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
 
-            int x = 5;
-            Console.WriteLine("x = " + x);
+            Console.WriteLine("Данные находятся в файле: " + path);
 
-            Console.WriteLine("***************************************************************************");
-            Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
-            Console.WriteLine("***************************************************************************");
+            Console.WriteLine("******************************************************************************");
+            Console.WriteLine("* РЕЗУЛЬТАТ:                                                                 *");
+            Console.WriteLine("******************************************************************************");
 
-            string res = ds.SaveToFileTextData(x);
+            string res = ds.LoadDataAndSave(path);
+            Console.WriteLine("Результат: " + res);
 
-            Console.WriteLine("Файл: " + res);
-            Console.WriteLine("Создан!");
             Console.ReadKey();
         }
     }

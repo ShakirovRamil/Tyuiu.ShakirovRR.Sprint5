@@ -30,10 +30,10 @@ namespace Tyuiu.ShakirovRR.Sprint5.Task2.V18
             Console.WriteLine("* Выполнил: Шакиров Рамиль Русланович | ИСТНБ-23-1                        *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* УСЛОВИЕ:                                                                *");
-            Console.WriteLine("* Дан двумерный целочисленный массив 3 на 3 элементов, заполненный        *");
-            Console.WriteLine("* значениями с клавиатуры. Заменить положительные элементы массива на 1,  *");
-            Console.WriteLine("* отрицательные на 0. Результат сохранить в файл OutPutFileTask2.csv      *");
-            Console.WriteLine("* и вывести на консоль.                                                   *");
+            Console.WriteLine("* Решить указанную в задании задачу                                       *");
+            Console.WriteLine("*                                                                         *");
+            Console.WriteLine("*                                                                         *");
+            Console.WriteLine("*                                                                         *");
             Console.WriteLine("*                                                                         *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");

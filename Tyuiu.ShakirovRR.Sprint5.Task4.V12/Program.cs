@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-using Tyuiu.ShakirovRR.Sprint5.Task0.V13.Lib;
+using System.IO;
+using Tyuiu.ShakirovRR.Sprint5.Task4.V12.Lib;
 
-namespace Tyuiu.ShakirovRR.Sprint5.Task0.V13
+namespace Tyuiu.ShakirovRR.Sprint5.Task4.V12
 {
     class Program
     {
@@ -18,8 +19,8 @@ namespace Tyuiu.ShakirovRR.Sprint5.Task0.V13
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт #5                                                               *");
             Console.WriteLine("* Тема: Обработка файлов                                                  *");
-            Console.WriteLine("* Задание #0                                                              *");
-            Console.WriteLine("* Вариант #13                                                             *");
+            Console.WriteLine("* Задание #4                                                              *");
+            Console.WriteLine("* Вариант #12                                                             *");
             Console.WriteLine("* Выполнил: Шакиров Рамиль Русланович | ИСТНБ-23-1                        *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* УСЛОВИЕ:                                                                *");
@@ -31,18 +32,21 @@ namespace Tyuiu.ShakirovRR.Sprint5.Task0.V13
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
 
-            int x = 5;
-            Console.WriteLine("x = " + x);
+            Console.WriteLine("Формула: у = Cos(x^3) + x/2 ");
+            string path = @"C:\Users\Рамиль\source\repos\Tyuiu.ShakirovRR.Sprint5\Tyuiu.ShakirovRR.Sprint5.Task4.V12\bin\Debug\InPutDataFileTask4V12.txt";
+            string strX = File.ReadAllText(path);
+            Console.WriteLine("Исходные данные Х в файле: " + path);
+            Console.WriteLine("Х = " + strX);
 
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
 
-            string res = ds.SaveToFileTextData(x);
+            double res = ds.LoadFromDataFile(path);
 
-            Console.WriteLine("Файл: " + res);
-            Console.WriteLine("Создан!");
-            Console.ReadKey();
+            Console.WriteLine(res);
+
+            Console.ReadLine();
         }
     }
 }

@@ -23,9 +23,9 @@ namespace Tyuiu.ShakirovRR.Sprint5.Task1.V25
             Console.WriteLine("* Выполнил: Шакиров Рамиль Русланович | ИСТНБ-23-1                        *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* УСЛОВИЕ:                                                                *");
-            Console.WriteLine("* Дано выражение вычислить его значение при x = 3, результат сохранить    *");
-            Console.WriteLine("* в текстовый файл OutPutFileTask0.txt и вывести на консоль.              *");
-            Console.WriteLine("* Округлить до трёх знаков после запятой.                                 *");
+            Console.WriteLine("* Решить указанную в задании задачу                                       *");
+            Console.WriteLine("*                                                                         *");
+            Console.WriteLine("*                                                                         *");
             Console.WriteLine("*                                                                         *");
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
